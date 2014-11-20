@@ -1,6 +1,6 @@
 {
   "html-app" : "/app/index.html",
-  "example" : true,
+  "example" : "auth-html",
   "resources" : {
     "app" : {
       "type" : "filesystem",
