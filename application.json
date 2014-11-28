@@ -53,13 +53,7 @@
     "storage" : {
       "type" : "mongo",
       "config" : {
-        "db" : "auth-html",
-        "servers" : [
-          {
-            "host" : "localhost",
-            "port" : 27017
-          }
-        ]
+        "db" : "auth-html"
       }
     }
 
