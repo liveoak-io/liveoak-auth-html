@@ -16,6 +16,10 @@
       }
     },
 
+    "application-clients" : {
+      "type" : "application-clients"
+    },
+
     "auth" : {
       "type" : "keycloak"
     },
