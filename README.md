@@ -26,23 +26,6 @@ $ cp -r $LIVEOAK_EXAMPLES/auth/auth-html $LIVEOAK/apps
 $ sh $LIVEOAK/bin/standalone.sh
 ````
 
-Setup the application
----------------------
-
-* Create roles for your application (Manual step required)
-  * Go to [http://localhost:8080/admin](http://localhost:8080/admin) and login as user "admin" with password "admin"
-  * Go to [http://localhost:8080/admin#/applications/auth-html/security/roles](http://localhost:8080/admin#/applications/auth-html/security/roles) and add new role "user". Then you can also select "user" to be default role by selecting the tick
-
-* Add HTML client for newly created application (Manual step currently required)
-  * Go to [http://localhost:8080/admin#/applications/auth-html/application-clients](http://localhost:8080/admin#/applications/auth-html/application-clients)
-  * Click "New Client"
-    * Name: "auth-html-client"
-    * Platform: HTML5
-    * Redirect URI: "http://localhost:8080/auth-html/*"
-    * Web Origins: "http://localhost:8080"
-    * Scope: select "user" scope
-    * Finally click "Save"
-
 Running the application
 -----------------------
 * Open your browser and go to http://localhost:8080/auth-html . Now you should see the application with anonymous page
