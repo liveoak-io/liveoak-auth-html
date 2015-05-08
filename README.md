@@ -26,6 +26,12 @@ $ cp -r $LIVEOAK_EXAMPLES/auth/auth-html $LIVEOAK/apps
 $ sh $LIVEOAK/bin/standalone.sh
 ````
 
+> An Application Client was created upon installation of the application. Note that the redirect and web origin
+> urls are set to 'http://localhost:8080'. If LiveOak is installed at something other than 'http://localhost:8080',
+> then it will need to be edited within the Admin Console.
+
+> When installed on OpenShift, be sure to change 'http' to 'https' for the urls mentioned above.
+
 Running the application
 -----------------------
 * Open your browser and go to http://localhost:8080/auth-html . Now you should see the application with anonymous page
